@@ -51,7 +51,7 @@ class ImageGallery extends React.Component {
   render() {
     return (
       <div>
-          GALLERT
+        <div>'</div>
         <Gallery photos={photos} onClick={this.openLightbox} />
         <Lightbox images={photos}
           onClose={this.closeLightbox}
