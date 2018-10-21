@@ -34,11 +34,11 @@ const styles = theme => ({
     color: '#e57373'
   },
   gallery: {
-    background: '#546e7a'
+    background: '#FFF',
   },
   galleryTitle: {
     fontSize: '53px',
-    color: '#FFF',
+    color: '#4db6ac',
     fontWeight: 300,
     marginBottom: '10px'
   },

@@ -78,7 +78,42 @@ const styles = theme => ({
     fontSize: '50px',
     display: 'inline-block',
     borderBottom: '2px solid #e57373'
-  }
+  },
+  '@media (max-width: 600px)': {
+    christineLabel: {
+      display: 'block',
+      textAlign: 'center'
+    },
+    joelLabel: {
+      display: 'block',
+      textAlign: 'center'
+    },
+    circle: {
+      display: 'block',
+      margin: 'auto',
+      width: '60px',
+      height: '60px',
+      fontSize: '48px',
+      top: 0,
+      lineHeight: '1.2em',
+    },
+    names: {
+      fontSize: '60px',
+      fontWeight: 300,
+    },
+    title: {
+      fontSize: '30px',
+    },
+    dates: {
+      fontSize: '25px',
+    },
+    place: {
+      fontSize: '20px',
+    },
+    day: {
+      fontSize: '40px',
+    },
+  },
 });
 
 class Head extends React.Component {
@@ -109,7 +144,7 @@ class Head extends React.Component {
             blur={4}
             bgImage={'/static/mer.jpg'}
             bgImageAlt="the cat"
-            strength={100}
+            strength={150}
            >
             <div className={classes.labelBLoc}>
               <div>
