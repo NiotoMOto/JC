@@ -4,7 +4,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Head from '../components/Head';
-import { ParallaxProvider} from 'react-scroll-parallax';
 import CircleImage from '../components/CircleImage';
 import { Grid } from '@material-ui/core';
 import ImageGallery from '../components/ImageGallery';

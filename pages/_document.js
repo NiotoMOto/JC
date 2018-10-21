@@ -18,15 +18,16 @@ class MyDocument extends Document {
             content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
           />
           {/* PWA primary color */}
-          <meta name="theme-color" content={pageContext.theme.palette.primary.main} />
+          <meta name="theme-color" content={pageContext.theme.palette.christineColor} />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
           />
           <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+          <link href="/static/main.css" rel="stylesheet" />
         </Head>
         <body>
-          <Main />
+          <Main styles={{ height: '100%'}} />
           <NextScript />
         </body>
       </html>
