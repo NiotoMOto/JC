@@ -10,10 +10,18 @@ class Timer extends React.Component {
     this.state = {
       date: Date.now()
     };
+   
+  }
+
+  componentDidMount() {
     this.countDownDate = new Date("Aug 24, 2019 15:00:00").getTime();
-    setInterval(() => {
+    this.intervalId = setInterval(() => {
       this.setState({ date: this.getCountDownTime()})
     });
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.intervalId)
   }
 
   getCountDownTime() {
